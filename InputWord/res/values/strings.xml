@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InputWord</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="A">あ</string>
+    <string name="I">い</string>
+    <string name="Description1">駅名を選択すると自動的に入力されます</string>
+
+</resources>
