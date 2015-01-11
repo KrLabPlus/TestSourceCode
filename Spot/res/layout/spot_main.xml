@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical" >
+ 
+         <ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+		<LinearLayout 
+ 		android:layout_width="fill_parent"	
+ 		android:layout_height="wrap_content"
+ 		android:orientation="vertical" >
+ 
+<!-- 説明文 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:textSize="12sp"
+        android:textColor="#4A4A4A"
+        android:layout_margin="10dp" />
+
+  
+
+ <!-- アコーディオンリスト1 -->   
+	 <LinearLayout
+     	android:id="@+id/conrainer"
+    	android:layout_width="248dp"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center_horizontal"
+    	android:orientation="vertical" >
+ 
+　	<!-- SET1 -->
+ 	<LinearLayout
+ 		android:id="@+id/btn1"
+ 		android:layout_width="250dp"
+ 		android:layout_height="wrap_content"
+ 		android:background="#EFBEC4">
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="34dp"
+         android:layout_height="match_parent"
+         android:src="@drawable/food"
+         android:contentDescription="@string/image_description0" />
+
+     <TextView
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:padding="10dp"
+         android:text="@string/list1"
+         android:textColor="#ffffff" />
+     
+     <ImageView 
+        android:id="@+id/imageView2"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="9dp"
+        android:layout_gravity="center"
+        android:src="@drawable/accordion"
+        android:contentDescription="@string/image_description1" />
+
+ 	</LinearLayout>
+ 
+ 	<!-- リスト内コンテンツ -->
+ 	<!-- コンテンツ1 -->
+	 <LinearLayout
+	 android:id="@+id/content1"	
+	 android:layout_width="250dp"
+     android:layout_height="wrap_content"
+ 	 android:background="#ffffff">
+
+     <CheckBox
+         android:id="@+id/checkBox2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content" />
+
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:padding="10dp"
+         android:text="@string/list1_1" />
+
+ 	</LinearLayout>
+ 	
+ 	<!-- コンテンツ2 -->
+  	<LinearLayout
+ 		android:id="@+id/content2"
+ 		android:layout_width="250dp"
+ 		android:layout_height="wrap_content"
+ 		android:background="#ffffff">
+
+      <CheckBox
+          android:id="@+id/checkBox3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+ 
+	   <TextView
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:padding="10dp"
+ 		android:text="@string/list1_2" />
+ 	</LinearLayout>
+  <!-- コンテンツ3 -->
+  	<LinearLayout
+ 		android:id="@+id/content3"
+ 		android:layout_width="250dp"
+ 		android:layout_height="wrap_content"
+ 		android:background="#ffffff">
+
+      <CheckBox
+          android:id="@+id/checkBox4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+ 
+		<TextView
+ 		 android:layout_width="fill_parent"
+ 		 android:layout_height="wrap_content"
+  		 android:padding="10dp"
+		 android:text="@string/list1_3" />
+ 	</LinearLayout>
+ 
+ 
+ 
+ 	<!-- SET2 -->
+ 	<LinearLayout
+ 	android:id="@+id/btn2"
+ 	android:layout_width="250dp"
+ 	android:layout_height="wrap_content"
+ 	android:background="#78D3D7">
+
+     <CheckBox
+         android:id="@+id/checkBox5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+ 		<TextView
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+		android:padding="10dp"
+ 		android:textColor="#ffffff"
+ 		android:text="@string/list2" />
+ 	</LinearLayout>
+
+ 
+	 <!-- SET3 -->
+ 	<LinearLayout
+ 	android:id="@+id/btn3"
+ 	android:layout_width="250dp"
+ 	android:layout_height="wrap_content"
+ 	android:background="#B4DA8A">
+
+     <CheckBox
+         android:id="@+id/checkBox6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+ 		<TextView
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:padding="10dp"
+ 		android:textColor="#ffffff"
+ 		android:text="@string/list3" />
+ 	</LinearLayout>
+
+ 
+ 	<!-- SET4 -->
+ 	<LinearLayout
+ 	android:id="@+id/btn4"
+ 	android:layout_width="250dp"
+ 	android:layout_height="wrap_content"
+ 	android:background="#FAC646">
+
+     <CheckBox
+         android:id="@+id/checkBox7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+ 		<TextView
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:padding="10dp"
+ 		android:textColor="#ffffff"
+ 		android:text="@string/list4" />
+	 </LinearLayout>
+ </LinearLayout>
+ 
+	 
+ <!-- 詳細検索 -->
+　<LinearLayout
+     android:id="@+id/conrainer2"
+     android:layout_width="248dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="10dp"
+     android:layout_gravity="center_horizontal"
+     android:orientation="vertical" >
+ 	
+
+ 	<!-- SET -->
+
+    <LinearLayout
+        android:id="@+id/btn5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#979797" >
+
+       
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="15dp"
+            android:text="@string/list5"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+        
+ 		<ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="34dp"
+            android:layout_height="20dp"
+            android:contentDescription="@string/image_description1"
+            android:src="@drawable/accordion" />
+     
+
+        
+    </LinearLayout>
+ 
+ 		<!-- リスト内コンテンツ -->
+<!-- 1 -->
+    <LinearLayout
+        android:id="@+id/content01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/station"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+        
+    <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_marginBottom="0dp">
+      
+        
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="49dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/editText1"
+            android:contentDescription="@string/image_description2"
+            android:src="@drawable/near" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="156dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="@string/station_hint"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+          </RelativeLayout>
+          </LinearLayout>
+          
+    <!-- 2 -->
+        <LinearLayout
+        android:id="@+id/content02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+    
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/distance"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+        
+        
+    <RadioGroup android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+   		android:id="@+id/RadioGroup">
+        
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio1"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio2"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio3"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio4"
+            android:textSize="12sp" />
+
+        
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <!-- イメージ(さがす)ボタン -->
+    <ImageButton
+    	 android:id="@+id/image_button"
+     	 android:layout_width="148dp"
+     	 android:layout_height="35dp"
+     	 android:layout_gravity="center_horizontal"
+      	 android:layout_margin="10dp"
+     	 android:background="#00000000"
+      	 android:scaleType="fitCenter"
+     	 android:contentDescription="@string/search"
+   	     android:src="@drawable/search_button" />
+    
+    
+ </LinearLayout>
+ </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>
+
+
